@@ -1,13 +1,21 @@
 
 
 class Bank{
-	constructor(){
+	constructor( bankname ){
 		//takes in the name of the bank.
+		this.nameOfBank = bankname;
+        this.accountList = {};
 		//makes an object to store all accounts into
 	}
-	makeAccount( ){
+	makeAccount( accountNumber ){
 		//makes an account
 		//takes in the account number of an account
+		if(this.accountList[accountNumber] === true){
+			return false;
+		} else {
+			this.accountList[accountnum] = new Account();
+            return this.accountList.accountnum;
+		}
 		//checks if the account number already exists in the account storage object in the constructor
 			//if already exists, returns false
 		//otherwise makes an new Account object, storing it into the storage object in the constructor
