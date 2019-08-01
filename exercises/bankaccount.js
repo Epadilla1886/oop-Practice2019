@@ -15,14 +15,19 @@ class Account{
 	}
 	remove( amount ){
 		//removes funds from an account
-		var withdrawl = amount;
-		//check if the amount to withdraw is more than the account
-		if(withdrawl > this.account){
-			return this.account;
+		var newBalance = this.account - amount;
+		
+		if(amount > this.account){
+			amount = this.account;
+			this.account = this.account - this.account;
+			return amount;
+			
+			
 		}else{
-			this.account = this.account - withdrawl;
-			return this.account;
+			this.account = newBalance;
+			return amount;
 		}
+		//check if the amount to withdraw is more than the account
 		//if more, only withdraw the amount in the account, not more
 		//if less, withdraw the amount specified
 		//return the amount actually withdrawn

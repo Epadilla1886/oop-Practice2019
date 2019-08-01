@@ -32,7 +32,7 @@ class Calculator{
 	loadNumber( num ){
 		//takes in a number and stores it as one of the numbers to perform math on
 		//takes in 1 number
-		if(typeof(num) === 'number' && this.mathNumb.length <2){
+		if(typeof(num) === 'number' && this.mathNumb.length < 2){
 			this.mathNumb.push(num);
 			return this.mathNumb.length;
 		}else{
