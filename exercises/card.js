@@ -16,6 +16,7 @@ class Deck{
 	constructor(){
 		//takes in nothing
 		//make storage for your card objects
+		this.cards = {};
 	}
 	addCard( suit, faceValue ){
 		//adds a card to the deck
