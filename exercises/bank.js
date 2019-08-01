@@ -13,17 +13,23 @@ class Bank{
 		if(this.accountList[accountNumber] === true){
 			return false;
 		} else {
-			this.accountList[accountnum] = new Account();
-            return this.accountList.accountnum;
+			this.accountList[accountNumber] = new Account();
+            return this.accountList.accountNumber;
 		}
 		//checks if the account number already exists in the account storage object in the constructor
 			//if already exists, returns false
 		//otherwise makes an new Account object, storing it into the storage object in the constructor
 		//returns the Account object that was constructed
 	}
-	checkForAccount(  ){
+	checkForAccount( accountNumber ){
 		//checks if an account exists or not
 		//takes in the account number of an account
+		if(this.accountList[accountNumber] === true){
+			return true;
+		} else {
+			this.accountList[accountNumber] === false;
+            return false;
+		}
 		//returns false if the account does not exist in the accounts object from the constructor
 		//returns true if the account does exist
 	}
