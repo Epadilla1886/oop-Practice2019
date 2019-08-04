@@ -19,10 +19,16 @@ class Deck{
 		this.cards = {};
 	}
 	addCard( suit, faceValue ){
+
+		var card = suit + faceValue;
+
+		return this.;
+		
 		//adds a card to the deck
 		//takes in a string suit and faceValue
 		//makes a new card Object from the Card template
 		//adds the card object to the storage in the constructor
+		return this.cards.length;
 		//returns the amount of cards currently stored
 	}
 	shuffle(){
@@ -33,6 +39,7 @@ class Deck{
 	getCardCount(){
 		//gets the current amount of cards stored
 		//takes in nothing
+		return this.cards;
 		//returns the amount of cards stored in the array in the constructor
 	}
 	dealCards(  ){
